@@ -1,9 +1,10 @@
-import React from 'react';
+
+import Navbar from './assets/Component/Navbar/Navbar';
 
 const App = () => {
   return (
     <div>
-      
+      <Navbar></Navbar>
     </div>
   );
 };
