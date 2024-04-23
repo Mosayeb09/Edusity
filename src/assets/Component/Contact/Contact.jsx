@@ -3,6 +3,7 @@ import msg_icon from '../../edusity_assets/msg-icon.png'
 import mail_icon from '../../edusity_assets/mail-icon.png'
 import phone_icon from '../../edusity_assets/phone-icon.png'
 import location_icon from '../../edusity_assets/location-icon.png'
+import white_icon  from '../../edusity_assets/white-arrow.png'
 
 const Contact = () => {
     return (
@@ -18,7 +19,18 @@ const Contact = () => {
 
                 </ul>
             </div>
-            <div className="contant-cl"></div>
+            <div className="contant-col"></div>
+            <form>
+                <label>Your Name</label>
+                <input type="text" value="" placeholder='Enter Your Name' required />
+                <label>Phone Number</label>
+                <input type="number" name="phone" id="" placeholder='Enter Your Mobile Number' required />
+                <label>Write Your Messages Here</label>
+                {/* <textarea name="message" id=""  rows="6" placeholder='Enter Your Message' required></textarea> */}
+                <textarea name="" id=""  rows="6"></textarea>
+                <button type="button" className='btn dark-btn'>Submit Now <img src={white_icon} alt="" /> </button>
+
+            </form>
 
         </div>
     );
