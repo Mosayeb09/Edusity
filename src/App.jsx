@@ -1,5 +1,6 @@
 
 import About from './assets/Component/About/About';
+import Campus from './assets/Component/Campus/Campus';
 import Hero from './assets/Component/Hero/Hero';
 import Navbar from './assets/Component/Navbar/Navbar';
 import Program from './assets/Component/Programs/Program';
@@ -15,6 +16,8 @@ const App = () => {
         <Program></Program>
         <About></About>
         <Title subTitle='Gallery' title= 'Campus Photos'></Title>
+        <Campus></Campus>
+        <Title subTitle='TESTIMONIALS' title= 'What Student Says'></Title>
 
       </div>
       
