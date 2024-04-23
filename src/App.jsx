@@ -11,9 +11,11 @@ const App = () => {
       <Navbar></Navbar>
       <Hero></Hero>
       <div className="container">
-        <Title></Title>
-          <Program></Program>
-          <About></About>
+        <Title subTitle='Our PROGRAM' title= 'What We Offer'></Title>
+        <Program></Program>
+        <About></About>
+        <Title subTitle='Gallery' title= 'Campus Photos'></Title>
+
       </div>
       
     </div>
