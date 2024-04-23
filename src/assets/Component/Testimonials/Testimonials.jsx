@@ -5,15 +5,40 @@ import  user_1 from '../../edusity_assets/user-1.png'
 import  user_2 from '../../edusity_assets/user-2.png'
 import  user_3 from '../../edusity_assets/user-3.png'
 import  user_4 from '../../edusity_assets/user-4.png'
+import { useRef } from 'react'
 
 
 const Testimonials = () => {
+
+    const slider = useRef();
+    let tx =0;
+
+const slideFoward = ()=> {
+    if (tx > -50){
+        tx -=25;
+
+
+    }
+    slider.current.style.transform =   `translatex(${tx}%)`;
+    
+}
+const slideBackward = ()=> {
+    if (tx <0){
+        tx +=25;
+
+
+    }
+    slider.current.style.transform =   `translatex(${tx}%)`;
+    
+}
+
+
     return (
         <div className='testimonials'>
-            <img src={Next_icon} alt="" className='next-btn' />
-            <img src={Back_icon} alt="" className='back-btn' />
+            <img src={Next_icon} alt="" className='next-btn' onClick={slideFoward}/>
+            <img src={Back_icon} alt="" className='back-btn' onClick={slideBackward}/>
             <div className="slider">
-                <ul>
+                <ul ref={slider}>
                     <li>
                         <div className="slide">
                             <div className="user-info">
