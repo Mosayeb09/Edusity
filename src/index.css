@@ -43,3 +43,12 @@ a{
   background: #212EA0;
   color: #fff;
 }
+@media (max-width:1200px){
+  .container{
+    padding-left: 5px;
+    padding-right: 5px;}
+    .btn {
+      padding: 14px 22px;
+    }
+  
+}
