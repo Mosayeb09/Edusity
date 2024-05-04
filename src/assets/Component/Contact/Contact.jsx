@@ -54,8 +54,8 @@ const Contact = () => {
                     {/* <input type="number" name="phone" id="" placeholder='Enter Your Mobile Number' required /> */}
                     <label>Write Your Messages Here</label>
                     {/* <textarea name="message" id=""  rows="6" placeholder='Enter Your Message' required></textarea> */}
-                    <textarea name="" id="" rows="6" placeholder='Enter Your message Here ' required></textarea>
-                    <button type="button" className='btn dark-btn'>Submit Now <img src={white_icon} alt="" /> </button>
+                    <textarea name="text" id="" cols="30" rows="10" placeholder='Enter Your message Here' required> </textarea>
+                    <button type="submit" className='btn dark-btn'>Submit Now <img src={white_icon} alt="" /> </button>
                 </form>
                 <span>{result}</span>
             </div>
