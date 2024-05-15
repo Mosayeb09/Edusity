@@ -49,12 +49,13 @@ nav ul li {
     nav ul{
         position: fixed;
         top: 0;
-        right: 0;
+        right:0;
         background: #212EA0;
+        z-index: -1;
         width: 200px;
         padding-top: 70px;
         transition: 0.5s;
-        bottom: 0;
+        /* bottom: 0; */
     }
     nav ul li{
         display: block;
@@ -64,6 +65,7 @@ nav ul li {
     .menu_icon{
         display: block;
         width: 40px;
+        cursor: pointer;
 
     }
 
